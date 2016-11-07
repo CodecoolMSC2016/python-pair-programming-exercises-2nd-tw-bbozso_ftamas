@@ -11,8 +11,12 @@ def passwordgen():
 
 
     password = random.sample(passwordlist, lenght)
+    
     print("Your password is: ")
     print("".join(password))
+    password = str(password)
+    
+    return password
 
 def main():
     passwordgen()
